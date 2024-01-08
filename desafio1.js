@@ -1,12 +1,99 @@
-/*
-## Objetivos 
-Crie uma variável para armazenar o nome e a quantidade de XP de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+// Usei um objeto no lugar de variáveis para organizar as propriedades do personagem. 
+const personagemDio = { nome: "Dio", nivel: 0, elo: "Iniciante" };
 
-1. Se XP for menor do que 1.000 = Ferro
-1. Se XP for entre  1.001 e 2.200 = Bronze
-1. Se XP for entre 2.001 e 5.000= Prata Ouro
-1. Se XP for entre 5001 e 8.000 = Platina Diamante
-1. Se XP for entre 8001 e 9.000 = Ascendente
-1. Se XP for entre 9001 e 10.000 = Imortal
-1. Se XP for maior ou igual e 10.001 = Radiante 
+
+function nivel(personagem) {
+  // caso queira subir o nivel do personagem para cada chamada da função;
+    // personagem.nivel += 1000;
+    // se o personagem é um objeto
+    if (typeof personagem == "object") {
+
+        // Se o personagem possuir a propriedade nivel
+        switch (true) {
+            case (personagem.nivel < 1000):
+                personagem.elo = "Ferro";
+                console.log(`Bem-vindo: ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                console.log(`${personagem.nome}, continue sua jornada até o Bronze`);
+                return personagem.elo;
+
+
+            case (personagem.nivel >= 1000 && personagem.nivel < 2100):
+                personagem.elo = "Bronze";
+                console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Prata`);
+                return personagem.elo;
+
+
+            case (personagem.nivel > 2100 && personagem.nivel < 4000):
+                personagem.elo = "Prata";
+                console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Ouro`);
+                return personagem.elo;
+
+                break;
+            case personagem.nivel >= 4000 && personagem.nivel <= 5000:
+                personagem.elo = "Ouro";
+                console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Platina`);
+
+                return personagem.elo;
+
+
+                case personagem.nivel >= 5001 && personagem.nivel <= 6001:
+                    personagem.elo = "Platina";
+                    console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                    console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Diamante`);
+    
+                    return personagem.elo;
+
+
+                    case personagem.nivel >= 6001 && personagem.nivel <= 7001:
+                        personagem.elo = "Diamante";
+                        console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                        console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Ascendente`);
+        
+                        return personagem.elo;           
+
+
+                        case personagem.nivel >= 8001 && personagem.nivel <= 9000:
+                            personagem.elo = "Ascendente";
+                            console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                            console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Imortal`);
+            
+                            return personagem.elo;           
+
+                            case personagem.nivel >= 9001 && personagem.nivel <= 10001:
+                                personagem.elo = "Imortal";
+                                console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+                                console.log(`Parabéns ${personagem.nome}, continue sua jornada até o Radiante`);
+                
+                                return personagem.elo; 
+            
+            
+                                case personagem.nivel >= 10001:
+                personagem.elo = "Radiante";
+                console.log(`Bem-vindo ${personagem.nome}, seu nível é: ${personagem.nivel}, seu elo: ${personagem.elo}`);
+console.log("Parabéns, você chegou no último Elo.")
+                return personagem.elo;
+
+            default:
+                console.log("Bem vindo: " + personagem.nome);
+console.log(`nivel: ${personagem.nivel}\nElo: ${personagem.elo}`)
+            break;
+        }
+
+    }
+
+}
+
+/*
+caso queira subir o nivel do personagem a cada segundo; 
+lembre de descomentar a linha de incrementação dentro da função nivel. 
+function teste() {
+    return nivel(personagemDio);
+}
+
+setInterval(teste, 1000);
+
 */
+

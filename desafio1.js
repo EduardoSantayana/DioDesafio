@@ -1,12 +1,12 @@
 // Usei um objeto no lugar de variáveis para organizar as propriedades do personagem. 
-const personagemDio = { nome: "Dio", nivel: 0, elo: "Iniciante" };
+const personagemDio = { nome: "Dio", nivel: 1000, elo: "Iniciante" };
 
 
 function nivel(personagem) {
   // caso queira subir o nivel do personagem para cada chamada da função;
     // personagem.nivel += 1000;
     // se o personagem é um objeto
-    if (typeof personagem == "object") {
+    if (typeof personagem == "object" && personagem.nivel) {
 
         // Se o personagem possuir a propriedade nivel
         switch (true) {
@@ -85,6 +85,8 @@ console.log(`nivel: ${personagem.nivel}\nElo: ${personagem.elo}`)
     }
 
 }
+
+nivel(personagemDio);
 
 /*
 caso queira subir o nivel do personagem a cada segundo; 

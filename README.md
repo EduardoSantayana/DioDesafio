@@ -1,7 +1,8 @@
 # Dio Desafio 
  
 ## Objetivos 
-
+## Dio Desafio-1 
+ 
 Crie uma variável para armazenar o nome e a quantidade de XP de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
 
 1. Se XP for menor do que 1.000 = Ferro
@@ -16,4 +17,24 @@ Crie uma variável para armazenar o nome e a quantidade de XP de um herói, depo
 
 ## explicação do meu código
 No lugar da palavra XP, utilizei `nível` como uma propriedade do objeto `personagem`. Fiz um teste `if` para verificar se corresponde a um objeto e para verificar se existe a propriedade `nivel`. Utilizei a estrutura `switch` para verificar os valores da propriedade `nível` do objeto `personagem` em cada `case` e altera a propriedade `elo` de acordo com o nível. Como utilizei `return` para alterar a propriedade `elo`, isso encerra a execução da condição e da função, alterando a propriedade elo e dessa maneira, saindo da condição `case` e eliminando a necessidade de usar o `break` para encerrar a condição.
+
+## Desafio-2 Calculadora de partidas Rankeadas
+## Objetivos 
+** **
+
+**Descrição do desafio:**
+
+Crie uma função que recebe como **parâmetro** a quantidade de **vitórias** e **derrotas** de um **jogador**. Em seguida, retorne o resultado para uma **variável**. O saldo de Rankeadas deve ser calculado através da fórmula: **(vitórias - derrotas)**.
+
+O que será utilizado:
+
+- Variável
+- Operadores
+- laços de repetição
+- Estruturas de decisões
+- Funções
+
+
+## explicação do meu código
+
 

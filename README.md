@@ -106,8 +106,7 @@ A classe `Jogador` representa a instância de um jogador em um jogo. Ela define 
 
 
 # Função `verificaRank`
-
-A função `verificaRank` é responsável por verificar o rank de um objeto do tipo `Jogador` e atribuir um elo correspondente com base no rank fornecido.
+A função `verificaRank` é responsável por verificar o rank de um objeto do tipo `Jogador` e atribuir um elo com base no rank fornecido.
 
 ## Parâmetros
 

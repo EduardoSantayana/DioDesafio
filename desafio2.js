@@ -68,11 +68,6 @@ class Jogador {
     get rank() {
         return this.#atualizarRank();
     }
-
-    // método para calcular o Rank;
-
-
-
 }
 
 
@@ -86,7 +81,7 @@ jogador.rank = 999;
 
 function verificaRank(objPersonagem) {
     // se o objeto é uma instância de Jogador, então a função é aplicada.
-    if (objPersonagem instanceof Jogador) {
+    if (objPersonagem instanceof Jogador && objPersonagem.rank) {
         switch (true) {
 
         case (objPersonagem.rank <= 10):
@@ -110,7 +105,7 @@ function verificaRank(objPersonagem) {
         case (objPersonagem.rank >= 1001):
         return objPersonagem.elo = "Imortal";
             default:
-
+console.log("Entre em contato com a desenvolvedora para verificar o status do seu personagem")
                 break;
         }
     } 

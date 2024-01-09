@@ -26,6 +26,17 @@ No lugar da palavra XP, utilizei `nível` como uma propriedade do objeto `person
 
 Crie uma função que recebe como **parâmetro** a quantidade de **vitórias** e **derrotas** de um **jogador**. Em seguida, retorne o resultado para uma **variável**. O saldo de Rankeadas deve ser calculado através da fórmula: **(vitórias - derrotas)**.
 
+**Condições da função:**
+
+1. Se **n** vitórias for menor do que 10, o rank é **Ferro**.
+2. Se **n** vitórias estiver entre 11 e 20, o rank é **Bronze**.
+3. Se **n** vitórias estiver entre 21 e 50, o rank é **Prata**.
+4. Se **n** vitórias estiver entre 51 e 80, o rank é **Ouro**.
+5. Se **n** vitórias estiver entre 81 e 90, o rank é **Diamante**.
+6. Se **n** vitórias estiver entre 91 e 100, o rank é **Lendário**.
+7. Se **n** vitórias for maior ou igual a 1001, o rank é **Imortal**.
+
+
 O que será utilizado:
 
 - Variável
@@ -33,6 +44,8 @@ O que será utilizado:
 - laços de repetição
 - Estruturas de decisões
 - Funções
+
+
 
 
 ## explicação do meu código

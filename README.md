@@ -133,10 +133,44 @@ Implementação Futura: Gerenciamento de Vitórias e Derrotas
 
 Para futuras implementações, considere o gerenciamento de vitórias e derrotas. Além disso, dentro da função `verificaRank`, verifique a existência das propriedades `vitorias` e `derrotas` no objeto `Jogador`.
 
-Caso você verifique o código e encontre incorrências ou tenha sugestões, fique à vontade para fazer modificações ou entrar em contato. 
+
+---
+
+### Desafio 3 Classe Genérica de Herói
+
+Crie uma classe genérica que representa um herói com as seguintes propriedades:
+
+- `nome`
+- `idade`
+- `tipo` (*Objetivo* - guerreiro, mago, monge, ninja)
+
+Além disso, deve ter um método chamado `atacar` que atenda aos requisitos a seguir:
+
+- Exibir a mensagem: "O **{tipo}** atacou usando **{ataque}**",
+  onde o **{tipo}** deve ser concatenado e colorido em azul,
+  e no **{ataque}** deve seguir uma descrição diferente, conforme a tabela abaixo:
+
+  - Se mago -> ataque usou magia
+  - Se guerreiro -> no ataque exibir (usou espada)
+  - Se monge -> usou artes marciais
+  - Se ninja -> usou (katana e shuriken)
+
+## Saída
+
+Ao final, deve ser exibida a mensagem:
+
+"O **{tipo}** atacou usando **{ataque}**";
+
+
+
+___
+
+
+Caso você verifique o código e encontre incoerências ou tenha sugestões, fique à vontade para fazer modificações ou entrar em contato. 
 
 
 
 Caso tenha interesse em participar de um bootcamp ou fazer um curso de programação, acesse ou pesquise [Digital Innovation One](https://www.dio.me/en).
 
-```
+``` 
+

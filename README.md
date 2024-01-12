@@ -155,6 +155,12 @@ Além disso, deve ter um método chamado `atacar` que atenda aos requisitos a se
   - Se monge -> usou artes marciais
   - Se ninja -> usou (katana e shuriken)
 
+## minha implementação : 
+
+Adicionei uma propriedade equipamento que, com base no tipo do personagem, define um valor padrão. Por causa da minha modificação, para cada tipo do personagem o ataque exibir seu equipamento.
+Implementei verificação para aceitar somente os tipos padrão, bloqueando tentativas de criar instâncias com tipos diferentes.
+
+
 ## Saída
 
 Ao final, deve ser exibida a mensagem:
